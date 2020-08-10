@@ -36,6 +36,7 @@ func main() {
 			checkLink(link)
 		}(link)
 	}
+	close(c)
 	waitGroup.Wait()
 }
 
